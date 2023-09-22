@@ -25,11 +25,11 @@ function draw() {
     bubbler[i].show()
     bubbler[i].move()
     //tjekker om bublerne er over skærmen
-    if(bubbler[i].y+bubbler[i].r<0){
+    if(bubbler[i].posY+bubbler[i].rad<0){
       //splicer elementet
       let Temp1 = bubbler.slice(0,i)
       let Temp2 = bubbler.slice(i+1,bubbler.length)
-      bubbler = concat(astTemp1,astTemp2)
+      bubbler = concat(Temp1,Temp2)
       //laver en ny bubbel
       //bruger radius til at bestemme hvor langt nede den skal være
       let tempR = random(BubRadMin,BubRadMax)
