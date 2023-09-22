@@ -6,7 +6,7 @@ let BubRadMin = 10
 function setup() {
   createCanvas(windowWidth, windowHeight);
   //laver variabel mængde bubbler
-  for(i++;i<Antal;i++){
+  for(let i=0;i<Antal;i++){
     //tempR gør det muligt at være meget tæt på udenfor skærmen
     //BubRadMin og Max gøre bublerne har en god størrelse
     let tempR = random(BubRadMin,BubRadMax)
@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
   background(220);
-  for(i=0;i<bubbler.length;i++){
+  for(let i=0;i<bubbler.length;i++){
     //bevæger og viser alle bublerne
     bubbler[i].show()
     bubbler[i].move()

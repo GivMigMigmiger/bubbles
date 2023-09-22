@@ -5,7 +5,7 @@ class Bubbles {
         this.rad = r;
     }
     
-    update(){
+    move(){
         this.posY -= 2;
     }
 
