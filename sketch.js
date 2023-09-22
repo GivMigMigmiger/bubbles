@@ -36,7 +36,7 @@ function draw() {
       append(bubbler,
         new Bubbles(
         random(-tempR,width),
-        heigt+tempR,
+        height+tempR,
         tempR))
         //rykker i én tilbage fordi den ellers springer en over
         i -= 1
