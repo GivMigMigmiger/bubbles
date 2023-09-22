@@ -6,10 +6,12 @@ function setup() {
   createCanvas(400, 400);
   //laver variabel mængde bubbler
   for(i++;i<Antal;i++){
+    //tempR gør det muligt at være meget tæt på udenforskærmen
+    let tempR = random(0,BubRadMax)
     append(bubbler,new Bubbles(
-      random(0,width),
-      random(0,height),
-      random(0,BubRadMax)))
+      random(-tempR,width+tempR),
+      random(-tempR,height+tempR),
+      tempR))
   }
 }
 
@@ -26,11 +28,12 @@ function draw() {
       let Temp2 = asteroider.slice(minIndex+1,asteroider.length)
       bubbler = concat(astTemp1,astTemp2)
       //laver en ny bubbel
+      //bruger radius til at bestemme hvor langt nede den skal være
       let tempR = random(0,BubRadMax)
       append(bubbler,new Bubbles(
-        random(0,width),
+        random(-tempR,width),
         heigt+tempR,
-        random(0,BubRadMax)))
+        tempR))
     }
   }
 
