@@ -1,0 +1,9 @@
+//Klassen hedder (VERBATIM!!!!!)
+Bubbles
+Bubbles(x,y,r)
+// variabler
+y
+r
+// funktioner
+move()
+show()
