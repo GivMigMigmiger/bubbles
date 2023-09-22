@@ -1,15 +1,15 @@
 class Bubbles {
-    constructor(x, y, r){
-        this.posX = x;
-        this.posY = y;
-        this.rad = r;
+    constructor(X, Y, R){
+        this.x = X;
+        this.y = Y;
+        this.r = R;
     }
     
     move(){
-        this.posY -= 2;
+        this.y -= 2;
     }
 
     show(){
-        ellipse(this.posX, this.posY, this.rad*2);
+        ellipse(this.x, this.y, this.r*2);
     }
 }
