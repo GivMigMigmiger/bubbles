@@ -25,7 +25,7 @@ function draw() {
     bubbler[i].show()
     bubbler[i].move()
     //tjekker om bublerne er over skærmen
-    if(bubbler[i].posY+bubbler[i].rad<0){
+    if(bubbler[i].y+bubbler[i].r<0){
       //splicer elementet
       let Temp1 = bubbler.slice(0,i)
       let Temp2 = bubbler.slice(i+1,bubbler.length)
